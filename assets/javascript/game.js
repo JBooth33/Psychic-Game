@@ -17,6 +17,7 @@ document.onkeyup = function(event) {
     var letter = letters[Math.floor(Math.random() * letters.length)];
     // takes user's guess
     var userGuess = event.key;
+    //shows any wrong guesses
     wrongGuesses.push(userGuess);
 
     if (userGuess === letter) {
